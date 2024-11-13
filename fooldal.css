@@ -1,28 +1,35 @@
-/* Alapértelmezett stílusok */
+/* Teljes oldalas háttérkép */
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-image: url('background.jpg'); /* Itt add meg a kép elérési útját */
+    background-size: cover; /* A kép kitölti a teljes hátteret */
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* A teljes böngészőablak magassága */
+    color: white; /* A szöveg színe fehér, hogy jól látszódjon a háttér előtt */
 }
 
 /* Nagyobb és középre igazított cím */
 h1 {
-    font-size: 3em; /* Kétszer akkora méret, mint korábban */
+    font-size: 3em;
     margin: 20px 0;
     text-align: center;
+    z-index: 1; /* Az elem a háttérkép fölött jelenik meg */
 }
 
 /* Ikonok rácsos elrendezése */
 .icon-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 oszlopos rács */
-    gap: 30px; /* Nagyobb távolság az ikonok között */
-    width: 100%; /* Széthúzza a grid-et a teljes szélességre */
-    max-width: 1200px; /* Korlátozza a rács maximális szélességét */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
     padding: 20px;
+    z-index: 1; /* A rács is a háttér fölött van */
 }
 
 /* Ikon stílusok */
@@ -30,15 +37,16 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px; /* Nagyobb ikonok */
-    background-color: #4CAF50;
+    padding: 40px;
+    background-color: rgba(76, 175, 80, 0.8); /* Enyhén áttetsző háttérszín */
     color: white;
     font-size: 1.5em;
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.3s;
+    z-index: 1;
 }
 
 .icon:hover {
-    background-color: #45a049;
+    background-color: rgba(69, 160, 73, 0.8);
 }
