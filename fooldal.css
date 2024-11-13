@@ -1,43 +1,42 @@
-/* Alapértelmezett stílusok */
+/* Teljes oldalas háttérkép */
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('background.jpg'); /* Itt add meg a kép elérési útját */
+    background-image: url('Images/background.jpg'); /* Add meg a háttérkép elérési útját */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    color: white;
 }
 
-/* Cím stílusok */
+/* Címsor stílusok */
 h1, h2 {
     width: 100%;
     max-width: 1200px;
-    text-align: center;
     padding: 20px;
-    margin: 0;
+    text-align: center;
     color: black;
+    margin: 10px 0;
 }
 
 h1 {
-    font-size: 3em; /* Nagyobb méret */
-    background-color: orange; /* Narancssárga háttér */
+    font-size: 3em;
+    background-color: orange;
 }
 
 h2 {
-    font-size: 2em; /* Kisebb, mint az h1 */
-    background-color: orange; /* Narancssárga háttér */
+    font-size: 2em;
+    background-color: orange;
 }
 
 /* Ikonok rácsos elrendezése */
 .icon-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px; /* Nagyobb hely az ikonok között */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Rugalmas oszlopok, melyek kitöltik a szélességet */
+    gap: 20px; /* Ikonok közötti tér */
     width: 100%;
     max-width: 1200px;
     padding: 20px;
@@ -48,16 +47,18 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px; /* Nagyobb méretű ikonok */
+    padding: 40px; /* Nagyobb ikonok */
     background-color: #1a237e; /* Sötétkék háttér */
     color: white; /* Fehér szöveg */
-    font-size: 1.5em; /* Nagyobb szövegméret */
+    font-size: 1.5em;
     text-decoration: none;
     border-radius: 8px;
+    width: 100%; /* Teljes szélesség */
+    height: 100%; /* Teljes magasság */
+    box-sizing: border-box; /* Biztosítja, hogy a padding ne torzítsa az ikonokat */
     transition: background-color 0.3s;
-    width: 100%; /* Ikonok teljes szélességben */
 }
 
 .icon:hover {
-    background-color: #0d1a4e; /* Sötétebb kék hover szín */
+    background-color: #0d1a4e; /* Sötétebb kék hover */
 }
