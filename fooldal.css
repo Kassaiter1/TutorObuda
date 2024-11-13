@@ -5,7 +5,7 @@ body {
     align-items: center;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('background.jpg'); /* Itt add meg a kép elérési útját */
+    background-image: url('images/background.jpg'); /* Itt add meg a kép elérési útját */
     background-size: cover; /* A kép kitölti a teljes hátteret */
     background-position: center;
     background-repeat: no-repeat;
