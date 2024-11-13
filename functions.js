@@ -13,3 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+function toggleForum() {
+    const forumPanel = document.getElementById("forumPanel");
+    forumPanel.classList.toggle("open"); // A fórum panel nyitásához és zárásához hozzáadjuk/eltávolítjuk az 'open' osztályt
+}
