@@ -1,50 +1,44 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Alapértelmezett stílusok */
 body {
-    font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    background-color: #f5f5f5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
 }
 
-.container {
+/* Nagyobb és középre igazított cím */
+h1 {
+    font-size: 3em; /* Kétszer akkora méret, mint korábban */
+    margin: 20px 0;
     text-align: center;
 }
 
-h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
+/* Ikonok rácsos elrendezése */
 .icon-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    max-width: 400px;
-    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr); /* 4 oszlopos rács */
+    gap: 30px; /* Nagyobb távolság az ikonok között */
+    width: 100%; /* Széthúzza a grid-et a teljes szélességre */
+    max-width: 1200px; /* Korlátozza a rács maximális szélességét */
+    padding: 20px;
 }
 
+/* Ikon stílusok */
 .icon {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    padding: 20px 0;
-    background-color: #007bff;
+    justify-content: center;
+    padding: 40px; /* Nagyobb ikonok */
+    background-color: #4CAF50;
     color: white;
+    font-size: 1.5em;
     text-decoration: none;
-    font-size: 18px;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .icon:hover {
-    background-color: #0056b3;
+    background-color: #45a049;
 }
