@@ -36,7 +36,7 @@ h2 {
 .icon-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Rugalmas oszlopok, melyek kitöltik a szélességet */
-    gap: 20px; /* Ikonok közötti tér */
+    gap: 35px; /* Ikonok közötti tér */
     width: 100%;
     max-width: 1200px;
     padding: 20px;
