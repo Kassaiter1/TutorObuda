@@ -85,14 +85,19 @@ h2 {
     bottom: 0;
     width: 0;
     height: 100%;
-    background-color: white;
+    background-image: url('images/logo.png'); 
+    background-size: cover;
+    background-position: center;
     box-shadow: -4px 0 8px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     transition: width 0.4s ease;
     z-index: 1;
     padding: 20px;
     color: black;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .forum-panel h2 {
     margin-top: 0;
