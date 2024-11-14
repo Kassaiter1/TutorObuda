@@ -122,3 +122,42 @@ h2 {
 .forum-panel.open {
     width: 300px; /* A fórum panel szélessége megnyitáskor */
 }
+
+/* Reszponzív szabályok - Mobil eszközökhöz */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* kisebb főcím */
+    }
+
+    h2 {
+        font-size: 1.5em; /* kisebb alcím */
+    }
+
+    .icon-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* kisebb oszlopok mobilon */
+    }
+
+    .icon {
+        padding: 30px; /* kisebb ikonok mobilon */
+        font-size: 1.2em; /* kisebb ikon szöveg */
+    }
+
+    .message-icon {
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.5em; /* kisebb message ikon */
+    }
+
+    .forum-panel {
+        padding: 10px; /* kisebb padding mobilon */
+    }
+
+    .forum-panel input,
+    .forum-panel textarea {
+        font-size: 0.9em; /* kisebb szöveg méret */
+    }
+
+    .forum-panel button {
+        font-size: 0.9em; /* kisebb gombok */
+    }
+}
