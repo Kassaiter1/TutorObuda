@@ -161,3 +161,50 @@ h2 {
         font-size: 0.9em; /* kisebb gombok */
     }
 }
+
+/* Hirdető fal */
+#ads-sidebar {
+    position: fixed; /* Fix pozícióban tartja a bal oldalon */
+    top: 20px; /* Az oldal tetejétől 20px-re */
+    left: 0; /* Az oldal bal szélén */
+    width: 250px; /* A hirdető fal szélessége */
+    padding: 15px;
+    background-color: #f4f4f4; /* Világos szürke háttér */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Biztosítja, hogy a hirdető fal előrébb legyen, mint a többi elem */
+    max-height: 100vh; /* Az oldal teljes magasságáig terjedjen */
+    overflow-y: auto; /* Görgethető, ha több hirdetés van */
+}
+
+/* Hirdetéselemek stílusai */
+.ad {
+    background-color: #ffffff; /* Fehér háttér */
+    margin-bottom: 15px; /* Térköz a hirdetések között */
+    padding: 10px;
+    border-radius: 5px; /* Lekerekített sarkok */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Árnyék */
+}
+
+.ad h3 {
+    color: #333; /* Hirdetés címe */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.ad p {
+    color: #666; /* Szövegszín */
+    font-size: 14px;
+}
+
+.ad p strong {
+    color: #000; /* A hirdetés fő szövege kiemelve */
+}
+
+/* A hirdető falra vonatkozó media queryk */
+@media (max-width: 768px) {
+    #ads-sidebar {
+        width: 200px; /* Mobilon kisebb szélesség */
+    }
+}
+
