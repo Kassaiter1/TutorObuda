@@ -1,21 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Összegyűjti az összes ikon elemet
+
     const icons = document.querySelectorAll(".icon");
 
-    // Eseménykezelő hozzárendelése minden ikonhoz
     icons.forEach(icon => {
         icon.addEventListener("click", function(event) {
-            event.preventDefault(); // Megakadályozza az alapértelmezett linkműveletet
-            const pageUrl = icon.getAttribute("href"); // Az oldal URL-jét az href attribútumból nyeri ki
+            event.preventDefault(); 
+            const pageUrl = icon.getAttribute("href"); 
             if (pageUrl) {
-                window.open(pageUrl, "_blank"); // Új lapon nyitja meg az oldalt
+                window.open(pageUrl, "_blank"); 
             }
         });
     });
 });
 function toggleForum() {
     const forumPanel = document.getElementById("forumPanel");
-    forumPanel.classList.toggle("open"); // Fórum panel nyitása és zárása
+    forumPanel.classList.toggle("open"); 
 }
 
 function submitQuestion() {
