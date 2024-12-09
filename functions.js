@@ -31,3 +31,10 @@ function submitQuestion() {
         alert("Kérlek, add meg a neved és a kérdésed!");
     }
 }
+
+const toggleButton = document.getElementById("toggle-button");
+const sidebar = document.getElementById("ads-sidebar");
+
+toggleButton.addEventListener("click", () => {
+  sidebar.classList.toggle("show");
+});
