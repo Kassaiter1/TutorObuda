@@ -162,6 +162,18 @@ h2 {
     }
 }
 
+#toggle-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
 /* Hirdető fal */
 #ads-sidebar.show {
   left: 0;
