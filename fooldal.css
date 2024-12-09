@@ -163,6 +163,9 @@ h2 {
 }
 
 /* Hirdető fal */
+#ads-sidebar.show {
+  left: 0;
+}
 #ads-sidebar {
     position: fixed; 
     top: 20px; 
